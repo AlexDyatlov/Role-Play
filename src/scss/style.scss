@@ -125,12 +125,66 @@
     }
   }
 }
-
-
 // end top
 
-
-
+// start about-us
+.about-us{
+  background-image: url('../images/aboutus-bg.png');
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 141px;
+    margin-right: 140px;
+  }
+}
+.info__box{
+  max-width: 510px;
+  &-title{
+    @include f700;
+    font-size: 64px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+  &-buttons{
+    text-align: right;
+    margin-bottom: 48px;
+    position: relative;
+    button{
+      background-color: transparent;
+      color: rgba(246, 246, 246, 0.231);
+      border: none;
+      line-height: 1.2;
+      cursor: pointer;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      background-color: rgb(11, 241, 255);
+      height: 4px;
+      width: 118px;
+      left: 1px;
+      bottom: 10px;
+    }
+  }
+  &-text{
+    color: rgba(246, 246, 246, 0.749);
+    font-size: 21px;
+    line-height: 1.2;
+    p{
+      margin-bottom: 40px;
+    }
+  }
+  &-start{
+    background-color: rgb(11, 241, 255);
+    border-radius: 4px;
+    font-size: 25px;
+    line-height: 1.2;
+    color: #151821;
+    margin-top: 10px;
+    padding: 13px 120px 15px;
+  }
+}
+// end about-us
 
 
 
