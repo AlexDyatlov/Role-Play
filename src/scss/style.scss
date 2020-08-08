@@ -3,6 +3,8 @@
 @import 'global';
 
 
+// start header
+
 .header{
   position: fixed;
   left: 0;
@@ -18,6 +20,7 @@
   }
 }
 .menu__list{
+  position: relative;
   &-item{
     display: inline-block;
     & + &{
@@ -29,9 +32,102 @@
       color: #f6f6f6;
     }
   }
+  &::before{
+    position: absolute;
+    background-image: url('../images/icons/line.png');
+    content: '';
+    bottom: -20px;
+    right: -10px;
+    width: 165px;
+    height: 6px;
+  }
+}
+// end header
+
+// start top
+.top{
+  background-image: url('../images/top-bg.png');
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  &__title{
+    font-size: 414px;
+    line-height: 1.2;
+    @include Basic;
+    margin-top: 185px;
+  }
+  &__img{
+    position: absolute;
+    bottom: -103px;
+    max-width: 887px;
+    height: 1080px;
+  }
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 5;
+    &-online{
+      font-size: 28px;
+      line-height: 30px;
+      border-radius: 4px;
+      position: relative;
+      z-index: 5;
+      background-color: rgb(11, 241, 255);
+      padding: 17px 35px 15px 37px;
+      &::before{
+        position: absolute;
+        content: '';
+        bottom: 2px;
+        left: 3px;
+        z-index: -1;
+        padding: 17px 35px 15px 37px;
+        background-color: #1d202f;
+        width: 253px;
+        height: 160px;
+      }
+      span{
+        font-size: 90px;
+        line-height: 1.1;
+        display: block;
+      }
+    }
+    &-inner{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 62px;
+      max-width: 640px;
+    }
+    &-title{
+      font-size: 40px;
+      line-height: 44px;
+    }
+  }
+}
+.top__box-img{
+  img{
+    width: 300px;
+    height: 300px;
+  }  
+}
+.top__social{
+  display: flex;
+  align-items: flex-end;
+  &-item{
+    & + &{
+      padding-left: 15px;
+    }
+  }
 }
 
 
+// end top
 
 
 
