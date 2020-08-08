@@ -3,8 +3,33 @@
 @import 'global';
 
 
+.header{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 71px;
+  z-index: 5;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 71px;
 
-
+  }
+}
+.menu__list{
+  &-item{
+    display: inline-block;
+    & + &{
+      padding-left: 52px;
+    }
+    a{
+      font-size: 30px;
+      line-height: 36px;
+      color: #f6f6f6;
+    }
+  }
+}
 
 
 

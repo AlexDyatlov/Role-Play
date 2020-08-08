@@ -27,6 +27,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 a {
@@ -36,4 +37,18 @@ a {
 button:focus,
 input:focus {
   outline: transparent;
+}
+
+body{
+  min-height: 2800px;
+  @include BPGB;
+  font-size: 18px;
+  line-height: 24px;
+  color: #f6f6f6;
+}
+
+.container{
+  max-width: 1728px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
