@@ -16,7 +16,6 @@
     justify-content: space-between;
     align-items: center;
     min-height: 71px;
-
   }
 }
 .menu__list{
@@ -185,6 +184,150 @@
   }
 }
 // end about-us
+
+// start section-start
+.start{
+  background-image: url('../images/start-bg.png');
+  color: #f7f7f7;
+  &__inner{
+    margin-left: 130px;
+  }
+  &__title{
+    font-size: 35px;
+    line-height: 39px;
+    margin: 160px 0 20px;
+  }
+  &__description{
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 700px;
+    margin-bottom: 65px;
+  }
+  &__img{
+    position: absolute;
+    bottom: 0;
+    right: 340px;
+    max-width: 935px;
+    height: 1080px;
+  }
+}
+.start__items{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1435px;
+}
+.start__item{
+  max-width: 460px;
+  min-height: 372px;
+  position: relative;
+  &-content{
+    background-color: #0c101b;
+    padding: 50px 50px 80px 30px;
+    border-bottom: 1px solid #0bf1ff;
+    transition: all .5s;
+    &::before{
+      position: absolute;
+      content: '';
+      background-color: #0bf1ff;
+      top: -7px;
+      left: 20px;
+      width: 47px;
+      height: 13px;
+      transform: skewX(-62deg);
+      -moz-transform: skewX(-62deg);
+      -o-transform: skewX(-62eg); 
+    }
+    &::after{
+      position: absolute;
+      content: '';
+      background-color: #0bf1ff;
+      bottom: 58px;
+      right: 35px;
+      width: 47px;
+      height: 13px;
+      transform: skewX(-62deg);
+      -moz-transform: skewX(-62deg);
+      -o-transform: skewX(-62eg); 
+    }
+  }
+  &-title{
+    font-size: 35px;
+    line-height: 39px;
+    margin-bottom: 45px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '';
+      top: -28px;
+    }
+  }
+  &-text{
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  &-description{
+    color: rgba(247, 247, 247, 0.651);
+  }
+  &-link{
+    background-color: #0c1325;
+    color: #f7f7f7;
+    font-size: 22px;
+    line-height: 1.2;
+    padding: 17px 27px 20px;
+    display: block;
+    border-radius: 0 0 4px 4px;
+    transition: all .5s;
+    &:hover,
+    &:focus{
+     background-color: #0bf1ff;
+     color: #171a24;
+     &::after{
+      position: absolute;
+      content: '';
+      background: rgb(11,241,255);
+      background: linear-gradient(180deg, rgba(11,241,255,1) 48%, rgba(21,24,33,1) 50%);
+      bottom: 58px;
+      right: 35px;
+      width: 47px;
+      height: 13px;
+      transform: skewX(-62deg);
+      -moz-transform: skewX(-62deg);
+      -o-transform: skewX(-62eg); 
+      }
+    }
+  }
+}
+.icon{
+  &-gta{
+    &::before{
+      background-image: url('../images/icons/gta.png');
+      right: -20px;
+      width: 109px;
+      height: 98px;
+    }
+  }
+  &-rage{
+    &::before{
+      background-image: url('../images/icons/rage.png');
+      right: -10px;
+      width: 68px;
+      height: 64px;
+    }
+  }
+  &-hype{
+    &::before{
+      background-image: url('../images/icons/hype.png');
+      right: -14px;
+      width: 90px;
+      height: 79px;
+    }
+  }
+}
+// end section-start
+
+
+
 
 
 
