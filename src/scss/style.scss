@@ -134,6 +134,14 @@
     margin-top: 141px;
     margin-right: 140px;
   }
+  &__img{
+    position: absolute;
+    bottom: 0;
+    left: 344px;
+    max-width: 1109px;
+    height: 528px;
+    z-index: 1;
+  }
 }
 .info__box{
   max-width: 510px;
@@ -179,8 +187,51 @@
     line-height: 1.2;
     color: #151821;
     margin-top: 10px;
+    z-index: 2;
     padding: 13px 120px 15px;
   }
+}
+.info__video{
+  width: 990px;
+  margin-top: 20px;
+}
+.video{
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-color: #000;
+  &__media{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  &__button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: none;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 5;
+    img{
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+.video--enabled{
+  cursor: pointer;
+}
+.video--enabled .video__button{
+  display: block;
+}
+.fancybox-button{
+  display: none;
 }
 // end about-us
 
