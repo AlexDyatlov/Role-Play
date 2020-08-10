@@ -9,15 +9,18 @@
     }
   }
 }
-@media (max-width: 1366px){
+@media (max-width: 1366){
   .donate{
     min-height: 768px;
     &__inner{
       padding: 192px 0 0;
     }
     &__img{
-      left: 0;
-      height: 768px;
+      left: 600px;
+      height: 680px;
     }
+  }
+  .item__box{
+    margin-left: 0;
   }
 }
