@@ -1,6 +1,18 @@
 $(function(){
 
-  
+  $('#fullpage').fullpage({
+    autoScrolling:true,
+    scrollHorizontally: true,
+    navigation: true,
+    sectionSelector: '.page-section',
+    onLeave: function(origin, destination, direction){
+      //прокрутка не будет осуществлена, если заданный раздел – раздел 3
+      if(destination.index == 2){
+        return false;
+      }
+    }
+  }); 
+
 });
 
 function findVideos() {
@@ -54,3 +66,5 @@ function generateURL(id) {
 }
 
 findVideos();
+
+

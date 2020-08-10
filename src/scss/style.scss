@@ -409,12 +409,9 @@
       -o-transform: skewX(-45deg); 
       top: -6px;
       left: 30px;
-    }
-    &::before{
       background-image: url('../images/icons/element.png');
     }
     &::after{
-      background-image: url('../images/icons/element.png');
       left: 95px;
     }
   }
@@ -594,7 +591,230 @@
 // end footer
 
 // end section-project
+#fp-nav {
+  margin-top: 0px !important;
+  width: 68px;
+  right: 30px;
+  padding: 0 8px;
+  ul li{
+    width: 23px;
+    height: 24px;
+    margin: 0;
+    margin-bottom: 64px;
+    a{
+      width: 23px;
+      height: 24px;
+      margin: 0;
+      margin-bottom: 64px;
+      span{
+        width: 23px;
+        height: 24px;
+        border-radius: 4px;
+        background: #fff;
+        margin: 0;
+        margin-bottom: 64px;
+      }
+    }
+  }
+}
 
+
+#fp-nav ul li a.active span{
+  width: 23px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: #0bf1ff;
+  margin: 0;
+  box-shadow: 1px 1px 20px 2px #0bf1ff;
+  -moz-box-shadow: 1px 1px 20px 2px #0bf1ff;
+}
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span{
+  width: 23px;
+  height: 24px;
+  margin: 0;
+  border-radius: 4px;
+}
+#fp-nav ul li:hover a span{
+  width: 23px;
+  height: 24px;
+  margin: 0;
+}
+
+// start donate
+.donate{
+  min-height: 1440px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &__inner{
+    padding: 340px 0 0;
+  }
+  &__img{
+    position: absolute;
+    bottom: 0;
+    left: 215px;
+    max-width: 1056px;
+    height: 1080px;
+  }
+}
+.item__box{
+  max-width: 619px;
+  margin-left: auto;
+}
+.donate__form{
+  border-radius: 4px;
+  background-color:#020713;
+  padding: 48px 59px 66px;
+  text-align: center;
+  position: relative;
+  &-title{
+    color: #f2f2f2;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 42px;
+    margin-left: 25px;
+  }
+  form{
+    max-width: 501px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  input{
+    display: block;
+    width: 100%;
+    background-color:#0b0f1b;
+    height: 56px;
+    border: none;
+    color: rgba(242, 242, 242, 0.4);
+    font-size: 20px;
+    line-height: 1.2;
+    padding-left: 70px;
+    padding-right: 20px;
+    margin-bottom: 8px;
+    position: relative;
+    &::placeholder{
+      color: rgba(242, 242, 242, 0.4);
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  }
+  &::before,
+  &::after{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 14px;
+    transform: skewX(-45deg);
+    -moz-transform: skewX(-45deg);
+    -o-transform: skewX(-45deg); 
+    background-image: url('../images/icons/element.png');
+  }
+  &::before{
+    top: -6px;
+    right: 10px;
+  }
+  &::after{
+    bottom: -6px;
+    left: 8px;
+  }
+}
+.donate-btn{
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-top: 10px;
+  padding: 6px 0;
+  color: #181923;
+  background-color: #0bf1ff;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '';
+    left: 175px;
+    top: 7px;
+    width: 26px;
+    height: 26px;
+    background-image: url('../images/icons/icon.png');
+  }
+}
+.item__info{
+  background-color: #131627;
+  padding: 46px 50px 40px 35px;
+  color: #f2f2f2;
+  line-height: 1.2;
+  &-title{
+    font-size: 26px;
+    margin-bottom: 27px;
+    span{
+      display: block;
+      font-size: 20px;
+    }
+  }
+  &-text{
+    p{
+      margin-bottom: 20px;
+    }
+  }
+  &-description{
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(242, 242, 242, 0.3);
+  }
+}
+.icon__form{
+  &-menu{
+    &::before{
+      z-index: 5;
+      position: absolute;
+      content: '';
+      background-image: url('../images/icons/menu.png');
+      width: 26px;
+      height: 20px;
+      top: 142px;
+      left: 78px;
+    }    
+  }
+  &-user{
+    &::before{
+      z-index: 5;
+      position: absolute;
+      content: '';
+      background-image: url('../images/icons/user.png');
+      width: 31px;
+      height: 31px;
+      top: 200px;
+      left: 75px;
+    }
+  }
+  &-email{
+    &::before{
+      z-index: 5;
+      position: absolute;
+      content: '';
+      background-image: url('../images/icons/email.png');
+      width: 33px;
+      height: 22px;
+      top: 269px;
+      left: 75px;
+    }
+  }
+  &-coins{
+    &::before{
+      z-index: 5;
+      position: absolute;
+      content: '';
+      background-image: url('../images/icons/coins.png');
+      width: 33px;
+      height: 33px;
+      bottom: 130px;
+      left: 76px;
+    }
+  }
+}
+
+// end donate
 
 
 @import 'media';

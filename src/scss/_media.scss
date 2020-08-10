@@ -1,0 +1,23 @@
+@media (max-width: 1920px){
+  .donate{
+    min-height: 1080px;
+    &__inner{
+      padding: 192px 0 0;
+    }
+    &__img{
+      left: 0;
+    }
+  }
+}
+@media (max-width: 1366px){
+  .donate{
+    min-height: 768px;
+    &__inner{
+      padding: 192px 0 0;
+    }
+    &__img{
+      left: 0;
+      height: 768px;
+    }
+  }
+}
