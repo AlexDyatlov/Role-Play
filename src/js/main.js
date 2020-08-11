@@ -1,17 +1,26 @@
 $(function(){
 
-  $('#fullpage').fullpage({
-    autoScrolling:true,
-    scrollHorizontally: true,
-    navigation: true,
-    sectionSelector: '.page-section',
-    onLeave: function(origin, destination, direction){
-      //прокрутка не будет осуществлена, если заданный раздел – раздел 3
-      if(destination.index == 2){
-        return false;
-      }
-    }
-  }); 
+  if(window.matchMedia('(min-width: 1300px)').matches){
+    $('#fullpage').fullpage({
+      autoScrolling:true,
+      scrollHorizontally: true,
+      navigation: true,
+      sectionSelector: '.page-section',
+      onLeave: function(origin, destination, direction){
+        //прокрутка не будет осуществлена, если заданный раздел – раздел 3
+        if(destination.index == 2){
+          return false;
+        }
+      },
+    }); 
+  }
+
+  var burgerbtn = document.querySelector('.menu__btn');
+
+  burgerbtn.addEventListener('click', function(){
+    burgerbtn.classList.toggle('open');
+    $('.menu__list').slideToggle();
+  })
 
 });
 
