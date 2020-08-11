@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Document</title>
+    <title>Role-Play</title>
   </head>
 
 <body>
@@ -24,12 +24,12 @@
           <div class="line-menu half end"></div>
         </div>
         <ul class="menu__list">
-          <li class="menu__list-item">
+          <li class="menu__list-item menu__list-forum">
             <a claass="menu__list-link" href="#">
               ფორუმი
             </a>
           </li>
-          <li class="menu__list-item">
+          <li class="menu__list-item menu__list-donate">
             <a claass="menu__list-link" href="donate.html">
               დონაცია
             </a>
@@ -99,7 +99,7 @@
                     <img class="video__media" src="https://i.ytimg.com/vi/-HIv_Uj1ERE/maxresdefault.jpg" alt="GTA5">
                   </picture>
                 </a>
-                <button class="video__button">
+                <button class="video__button" aria-label="Запустить видео">
                   <img src="images/icons/video.png" alt="">
                 </button>
               </div>
@@ -109,8 +109,8 @@
                 HYPE ROLEPLAY
               </h1>
               <div class="info__box-buttons">
-                <button class="">სერვერის შესახებ</button>
-                <button class="">თამაშის დაწყება</button>
+                <a data-menuanchor="4rdPage" class="info-box__server" href="#4rdPage">სერვერის შესახებ</a>
+                <a data-menuanchor="3rdPage" class="info-box__game" href="#3rdPage">თამაშის დაწყება</a>
               </div>
               <div class="info__box-text">
                 <p>განახლებული პრეოქტი თქვენთვის კარგად ნაცნობი გუნდის და დეველოპერებისაგან. ბევრი პრობლემის მიუხედავად
@@ -121,16 +121,16 @@
                   კითხვები შეგიძლიათ დაუკავშირდეთ მხარდამჭერ ჯგუფს ან შექმნათ ახალი განაცხადი ფორუმზე.
                 </p>
               </div>
-              <button class="info__box-start" type="submit">
+              <a data-menuanchor="3rdPage" class="info__box-start" href="#3rdPage">
                 თამაშის დაწყება
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> 
 
-    <section class="page-section start">
+   <section class="page-section start">
       <div class="page-section__wrapper">
         <div class="container">
           <div class="start__inner">
@@ -195,7 +195,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> 
 
     <section class="page-section project">
       <div class="page-section__wrapper">
@@ -304,7 +304,7 @@
           </footer>
         </div>
       </div>
-    </section>
+    </section> 
 
   </main>
   <!-- STOP WRITE CODE -->

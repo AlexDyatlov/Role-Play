@@ -12,6 +12,7 @@ $(function(){
           return false;
         }
       },
+      anchors:['firstPage', 'secondPage', '3rdPage', '4rdPage']
     }); 
   }
 
@@ -21,6 +22,12 @@ $(function(){
     burgerbtn.classList.toggle('open');
     $('.menu__list').slideToggle();
   })
+
+  var scroll = new SmoothScroll('a[href*="#"]',{
+    speed: 700,
+    speedAsDuration: true
+  });
+
 
 });
 
