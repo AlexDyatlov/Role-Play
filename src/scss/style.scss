@@ -213,6 +213,11 @@
     z-index: 2;
     padding: 13px 5px 15px;
     cursor: pointer;
+    transition: all .7s;
+    &:hover{
+      background-color: #0c1325;
+      color: #fff;
+    }
   }
 }
 .info-box__server{
@@ -496,6 +501,7 @@
   background-color: #0c101b;
   color: #f7f7f7;
   padding: 40px 20px 20px 28px;
+  transition: all .5s;
   &-title{
     font-size: 31px;
     line-height: 1.2;

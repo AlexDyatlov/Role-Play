@@ -23,10 +23,22 @@ $(function(){
     $('.menu__list').slideToggle();
   })
 
-  var scroll = new SmoothScroll('a[href*="#"]',{
-    speed: 700,
-    speedAsDuration: true
-  });
+
+ if(window.matchMedia('(max-width: 1299px)').matches){
+    $('#fullpage').fullpage({
+      autoScrolling: false,
+      scrollHorizontally: false,
+      navigation: false,
+      sectionSelector: '.page-section',
+      onLeave: function(origin, destination, direction){
+        //прокрутка не будет осуществлена, если заданный раздел – раздел 3
+        if(destination.index == 2){
+          return false;
+        }
+      },
+      anchors:['firstPage', 'secondPage', '3rdPage', '4rdPage']
+    }); 
+  }
 
 
 });
