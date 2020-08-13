@@ -10,9 +10,8 @@ html {
 
 html,
 body {
-  // height: 100%;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden !important;
 }
 
 ul,
@@ -65,4 +64,3 @@ body{
     padding: 135px 0 40px;
   }
 }
-

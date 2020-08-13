@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ka">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Role-Play</title>
-  </head>
+</head>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,12 +29,12 @@
         </div>
         <ul class="menu__list">
           <li class="menu__list-item menu__list-forum">
-            <a claass="menu__list-link" href="#">
+            <a class="menu__list-link" href="#">
               ფორუმი
             </a>
           </li>
           <li class="menu__list-item menu__list-donate">
-            <a claass="menu__list-link" href="donate.html">
+            <a class="menu__list-link" href="donate.html">
               დონაცია
             </a>
           </li>
@@ -43,12 +43,15 @@
     </div>
   </div>
 </header>
-  
+  <audio id="myaudio" autoplay loop>
+    <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis"></source>
+    <source src="audio/music.mp3" type="audio/mpeg"></source>
+  </audio>
   <main class="donate" style="background-image: url(images/donate-bg.png);">
     <div class="container">
       <div class="donate__inner">
-        <img class="donate__img" src="images/content/characters.png" alt="">
-        <div class="item__box">
+        <img data-aos="fade-up" data-aos-delay="300" class="donate__img" src="images/content/characters.png" alt="">
+        <div data-aos="fade-left" data-aos-delay="500" class="item__box">
           <div class="donate__form">
             <div class="donate__form-title">
               მიუთითეთ პარამეტრები
@@ -61,7 +64,7 @@
               <input class="donate__form-input" type="text" placeholder="მთავარი სერვერი" required>
               <input class="donate__form-input" type="text" placeholder="თქვენი ლოგინი" required>
               <input class="donate__form-input" type="email" placeholder="მიუთიეთ ელექტრონული ფოსტა" required>
-              <input class="donate__form-input" type="number" placeholder="ქოინების რაოდენობა" required>
+              <input class="donate__form-input" type="number" min="0" placeholder="ქოინების რაოდენობა" required>
               <button class="donate-btn" type="submit">ყიდვა</button>
             </form>
           </div>

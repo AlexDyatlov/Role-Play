@@ -19,7 +19,6 @@
   }
 }
 .menu__list{
-  position: relative;
   &-item{
     display: inline-block;
     & + &{
@@ -29,35 +28,25 @@
       font-size: 30px;
       line-height: 36px;
       color: #f6f6f6;
-    }
-  }
-}
-.menu__list-donate{
-  a{
-    &:hover{
+      position: relative;
       &::before{
+        content: "";
         position: absolute;
-        background-image: url('../images/icons/line.png');
-        content: '';
-        bottom: -20px;
-        right: -10px;
-        width: 165px;
-        height: 6px;
+        bottom: -10px;
+        right: 0;
+        width: 0;
+        height: 3px;
+        background-color: rgb(11, 241, 255);
+        transition: .3s;
       }
-    }
-  }
-}
-.menu__list-forum{
-  a{
-    &:hover{
-      &::after{
-        position: absolute;
-        background-image: url('../images/icons/line.png');
-        content: '';
-        bottom: -20px;
-        left: -19px;
-        width: 165px;
-        height: 6px;
+      &:hover::before{
+        width: 100%;
+        left: 0;
+        background-color: rgb(11, 241, 255);
+      }
+      &:hover{
+        transition: .3s;
+        color: #0bf1ff;
       }
     }
   }
@@ -85,6 +74,7 @@
     bottom: 0;
     max-width: 887px;
     height: 1080px;
+    z-index: 1;
   }
   &__box{
     display: flex;
@@ -181,6 +171,11 @@
       cursor: pointer;
       line-height: 1.2;
       color: rgba(246, 246, 246, 0.231);
+      transition: all .3s;
+      &:hover,
+      &:focus{
+        color: #f6f6f6;
+      }
     }
     &::before{
       content: '';
@@ -201,22 +196,22 @@
     }
   }
   &-start{
-    background-color: rgb(11, 241, 255);
     border-radius: 4px;
     border: none;
     font-size: 25px;
     line-height: 1.2;
     display: block;
     text-align: center;
-    color: #151821;
     margin-top: 10px;
     z-index: 2;
     padding: 13px 5px 15px;
     cursor: pointer;
     transition: all .7s;
+    background-color: #0c1325;
+    color: #f7f7f7;
     &:hover{
-      background-color: #0c1325;
-      color: #fff;
+      background-color: rgb(11, 241, 255);
+      color: #151821;
     }
   }
 }
@@ -902,7 +897,6 @@
     }
   }
 }
-
 // end donate
 
 

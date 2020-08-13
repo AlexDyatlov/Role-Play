@@ -17,6 +17,12 @@
     &__img{
       left: 344px;
     }
+    &__inner{
+      margin-top: 25px;
+    }
+  }
+  .info__box{
+    z-index: 5;
   }
   .start{
     &__title{
@@ -237,12 +243,13 @@
       padding: 160px 0 0;
     }
     &__img{
-      left: 600px;
-      height: 680px;
+      display: none;
     }
   }
   .item__box{
     margin-left: 0;
+    display: flex;
+    max-width: 100%;
   }
   .top__box{
     margin-top: 85px;
@@ -350,6 +357,9 @@
   }
 }
 @media (max-width: 1300px){
+  html,body {
+    overflow-y: scroll !important;
+  }
   .project__hype{
     max-width: 100%;
     &-text{
@@ -415,9 +425,12 @@
     margin: 0;
     flex-direction: column;
   }
-  .donate__img,
   .about-us__img{
     display: none;
+  }
+  .item__box{
+    flex-direction: column;
+    max-width: 619px;
   }
 }
 @media (max-width: 1020px){
@@ -507,22 +520,14 @@
       }
     }
   }
-  .menu__list-donate,
-  .menu__list-forum{
-    a{
-      &:hover{
-        &::before,
-        &::after{
-          display: none;
-        }
-      }
-    }
-  }
   .menu{
     a{
       display: block;
       padding: 10px 0;
       border-bottom: 1px solid #000;
+      &::before{
+        display: none;
+      }
     }
     li{
       display: block;

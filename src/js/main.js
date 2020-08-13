@@ -5,6 +5,7 @@ $(function(){
       autoScrolling:true,
       scrollHorizontally: true,
       navigation: true,
+      scrollBar: true,
       sectionSelector: '.page-section',
       onLeave: function(origin, destination, direction){
         //прокрутка не будет осуществлена, если заданный раздел – раздел 3
@@ -40,6 +41,13 @@ $(function(){
     }); 
   }
 
+  AOS.init({
+    duration: 1500,
+    delay: 400,
+  });
+
+  var audio = document.getElementById("myaudio");
+  audio.volume = 0.2
 
 });
 
