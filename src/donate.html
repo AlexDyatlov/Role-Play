@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ka">
+  @@include('components/_head.html')
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  @@include('components/_header.html')
+  <audio id="myaudio" autoplay loop>
+    <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis"></source>
+    <source src="audio/music.mp3" type="audio/mpeg"></source>
+  </audio>
+  <main class="donate" style="background-image: url(images/donate-bg.png);">
+    <div class="container">
+      <div class="donate__inner">
+        <img data-aos="fade-up" data-aos-delay="300" class="donate__img" src="images/content/characters.png" alt="">
+        <div data-aos="fade-left" data-aos-delay="500" class="item__box">
+          <div class="donate__form">
+            <div class="donate__form-title">
+              მიუთითეთ პარამეტრები
+            </div>
+            <span class="icon__form-menu"></span>
+            <span class="icon__form-user"></span>
+            <span class="icon__form-email"></span>
+            <span class="icon__form-coins"></span>
+            <form>
+              <input class="donate__form-input" type="text" placeholder="მთავარი სერვერი" required>
+              <input class="donate__form-input" type="text" placeholder="თქვენი ლოგინი" required>
+              <input class="donate__form-input" type="email" placeholder="მიუთიეთ ელექტრონული ფოსტა" required>
+              <input class="donate__form-input" type="number" min="0" placeholder="ქოინების რაოდენობა" required>
+              <button class="donate-btn" type="submit">ყიდვა</button>
+            </form>
+          </div>
+          <div class="item__info">
+            <div class="item__info-title">ინფორმაცია
+              <span>ჩვენი კურსით 1HYPE ქოინი = 50$ [სერვერზე]</span>
+            </div>
+            <div class="item__info-text">
+              <p>
+                ჰაიპ ქოინებით თქვენ შეგიძლიათ შეიძინოთ სასურველი ნივთები და ქონება ჩვენს სერვერზე. ასევე ჰაიპ ქოინები საშუალებას გაძლევთ შეიძინოთ უნიკალური სატრანსპორტო საშუალებები.
+              </p>
+              <p>
+                როდესაც შეიძენთ საიტიდან ჰაიპ ქოინებს, აუცილებელია დაუკავშირდეთ სათამაშო სერვერს და დონატ მენიუდან უკვე შეძლებთ გააუკეთოთ შენაძენი.
+              </p>
+            </div>
+            <div class="item__info-description">
+              პრობლემის შემთხვევაში დაგვიკავშირდით: HELP@HYPERP.GE ან გახსენით საჩივარი ფორუმზე.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  @@include('components/_scripts.html')
+</body>
+</html>
