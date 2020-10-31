@@ -53,9 +53,7 @@ body{
 
 .page-section{
   height: 100vh;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
+  background: top center/cover no-repeat;
   position: relative;
   &__wrapper{
     min-height: 100vh;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/icons/favlogo.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Role-Play</title>
@@ -18,7 +19,7 @@
   <header class="header">
   <div class="container">
     <div class="header__inner">
-      <a class="logo" href="#">
+      <a class="logo" href="index.html">
         <img src="images/logo.png" alt="">
       </a>
       <nav class="menu">
@@ -61,7 +62,11 @@
             <span class="icon__form-email"></span>
             <span class="icon__form-coins"></span>
             <form>
-              <input class="donate__form-input" type="text" placeholder="მთავარი სერვერი" required>
+              <select class="filter-style" data-placeholder="აირჩიეთ სერვერი" required>
+                <option></option>
+                <option>Hype Role Play მთავარი სერვერი</option>
+                <option>Hype Role Play მეორე სერვერი (დახურულია)</option>
+              </select>
               <input class="donate__form-input" type="text" placeholder="თქვენი ლოგინი" required>
               <input class="donate__form-input" type="email" placeholder="მიუთიეთ ელექტრონული ფოსტა" required>
               <input class="donate__form-input" type="number" min="0" placeholder="ქოინების რაოდენობა" required>
