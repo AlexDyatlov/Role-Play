@@ -1,28 +1,17 @@
-<!-- @format -->
+# HYPE RolePlay
 
-# Easy-webdev-startpack
+Веб-сайт игрового проекта HYPE RolePlay в gta5.
 
-Сборка Gulp4 с плагинами для разработки вебпроектов.
+Немного о проекте.
 
-Что есть в сборке:
+Проект на грузинском языке.
+Сайт имеет постраничную прокрутку с помощью библиотеки fullpage.js до 1300px.
+Имеется адаптивная версия, реализована плавная анимация с помощью библиотеки aos.js.
 
-- компилятор для препроцессора scss/sass;
-- минификация готового css;
-- автопрефиксер;
-- импорт одних файлов в другие, который позволяет собирать html из модулей;
-- babel;
-- конвертация шрифтов из ttf в eot, woff и woff2;
-- сжатие изображений;
-- для живого обновления страниц - browsersync;
-- карта исходников для отображения в браузере, из какого scss взят кусок css;
-- вывод размеров файлов в консоли во время работы gulp;
-- автоматичская отправка на хостинг по FTP/SFTP.
-
-Тасклист следующей версии:
-
-- автоматическое формирование и подключение @font-face;
-- адекватное сжатие png через pngquant;
-- сжатие svg;
-- создание png и svg-спрайтов;
-- разделение задач на dev и build (работа с разными плагинами и вызов разными командами);
-- etc.
+<p align="center">
+ <img  src="https://github.com/AlexDyatlov/myScreenshots/raw/master/screens/RolePlay1.png">
+ <img  src="https://github.com/AlexDyatlov/myScreenshots/raw/master/screens/RolePlay2.png">
+ <img  src="https://github.com/AlexDyatlov/myScreenshots/raw/master/screens/RolePlay3.png">
+ <img  src="https://github.com/AlexDyatlov/myScreenshots/raw/master/screens/RolePlay4.png">
+ <img  src="https://github.com/AlexDyatlov/myScreenshots/raw/master/screens/RolePlay-page2.png">
+</p>

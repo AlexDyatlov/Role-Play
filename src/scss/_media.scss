@@ -1,6 +1,5 @@
 @media (max-width: 1920px){
   .donate{
-    min-height: 1080px;
     &__inner{
       padding: 192px 0 0;
     }
@@ -11,6 +10,11 @@
   .top{
     &__box{
       margin-top: 0;
+    }
+    &__img{
+      max-width: 887px;
+      height: 990px;
+      left: 510px;
     }
   }
   .about-us{
@@ -60,6 +64,7 @@
     &__img{
       max-width: 660px;
       height: 620px;
+      left: 470px;
     }
   }
   .info__video{
@@ -238,7 +243,6 @@
     }
   }
   .donate{
-    min-height: 768px;
     &__inner{
       padding: 160px 0 0;
     }
@@ -262,9 +266,10 @@
     &-online{
       font-size: 22px;
       line-height: 26px;
+      width: 204px;
       span{
         font-size: 50px;
-        text-align: left;
+        min-height: 55px;
       }
       &::before{
         width: 202px;
@@ -610,6 +615,14 @@
     }
   }
 }
+@media (max-width: 590px){
+  .jq-selectbox__select-text{
+    max-width: 300px;
+  }
+  .jq-selectbox__dropdown {
+    padding: 7px 20px;
+  }
+}
 @media (max-width: 510px){
   .start__item-content::after{
     display: none;
@@ -636,6 +649,12 @@
   }
 }
 @media (max-width: 460px){
+  .jq-selectbox__dropdown {
+    padding: 7px 5px;
+  } 
+  .jq-selectbox__select-text {
+    max-width: 155px;
+  }
   .start__item{
     margin-bottom: 20px;
     &-link{

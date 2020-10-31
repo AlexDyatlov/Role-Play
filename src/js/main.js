@@ -7,12 +7,6 @@ $(function(){
       navigation: true,
       scrollBar: true,
       sectionSelector: '.page-section',
-      onLeave: function(origin, destination, direction){
-        //прокрутка не будет осуществлена, если заданный раздел – раздел 3
-        if(destination.index == 2){
-          return false;
-        }
-      },
       anchors:['firstPage', 'secondPage', '3rdPage', '4rdPage']
     }); 
   }
@@ -31,12 +25,6 @@ $(function(){
       scrollHorizontally: false,
       navigation: false,
       sectionSelector: '.page-section',
-      onLeave: function(origin, destination, direction){
-        //прокрутка не будет осуществлена, если заданный раздел – раздел 3
-        if(destination.index == 2){
-          return false;
-        }
-      },
       anchors:['firstPage', 'secondPage', '3rdPage', '4rdPage']
     }); 
   }
@@ -49,6 +37,8 @@ $(function(){
   var audio = document.getElementById("myaudio");
   audio.volume = 0.2
 
+  $('.filter-style').styler();
+  
 });
 
 function findVideos() {
@@ -102,5 +92,36 @@ function generateURL(id) {
 }
 
 findVideos();
+
+ // start скрипт счетчика онлайна сервера
+function ShowCounter() {
+  $('#online').each(function() {
+    $(this).prop('Counter', 0).animate({
+      Counter: $(this).text()
+    }, {
+      duration: 4000,
+      easing: 'swing',
+      step: function(now) {
+        $(this).text(Math.ceil(now));
+      }
+    });
+  });
+  
+}
+
+var updateInterval = 700;
+_timer = setTimeout(updatePlayerCount, updateInterval);
+
+function updatePlayerCount() {
+  var ip = "rage2.grand-rp.su:22005";
+  $.getJSON('https://cdn.rage.mp/master', function(masterlist) {
+    if(masterlist[ip] != undefined){
+      document.getElementById('online').innerHTML = masterlist[ip].players;
+      ShowCounter();
+      _timer = setTimeout(updatePlayerCount, updateInterval);
+    }
+  });
+}
+ // end скрипт счетчика онлайна сервера
 
 
